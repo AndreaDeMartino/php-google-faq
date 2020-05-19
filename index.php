@@ -4,18 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="dist/style/main.css">
-  <title>Document</title>
+  <title>FAQ - Privacy & Terms</title>
 </head>
 <body>
 
-  <!-- @here Esercizio di oggi: Google FAQ
-  Descrizione
-  Riscrivere questa pagina del sito google https://policies.google.com/faq
-  Ci sono diverse domande con relative risposte. Gestire il “Database” (array) e la visualizzazione di queste domande e risposte con PHP.
-  Non preoccupatevi dei link presenti nel testo delle risposte -->
-
-
-  <?php
+  <?php //Data Source
   $content = array(
     [
       'question' => "How are you implementing the recent Court of Justice of the European Union (CJEU) decision on the right to be forgotten?",
@@ -55,6 +48,7 @@
 
   <div class="app">
 
+    <!-- Header -->
     <header class="header">
       <div class="header__logo">
         <img class="google-logo" src="dist/img/google.png" alt="GOOGLE">
@@ -76,6 +70,7 @@
       </nav>
     </header>
 
+    <!-- Main -->
     <main class="main">
       <div class="main__wrapper">
         <?php for( $i = 0; $i < count($content); $i++){ ?>
@@ -86,7 +81,8 @@
         <?php }?>  
       </div>
     </main>
-
+    
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__left">
@@ -100,16 +96,17 @@
         <div class="footer__right">
           <img src="dist/img/world.png" alt="">
           <select class="footer_selection">
-                    <option value="English">English (United Kingdom)</option>
-                    <option value="Italian">Italian</option>
-                    <option value="Japanase">Japanase</option>
-                    <option value="Spanish">Spanish</option>
+            <option value="English">English (United Kingdom)</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanase">Japanase</option>
+            <option value="Spanish">Spanish</option>
           </select>
         </div>
       </div>
     </footer>
   </div>
-
+  
+  <!-- My Js -->
   <script src="dist/script/main.js"></script>
 </body>
 </html>
