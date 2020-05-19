@@ -39,3 +39,15 @@ a{
   width: $width;
   margin: 0 auto;
 }
+
+// Border bottom line -- param: width and color
+@mixin u--bottom-line ($width: 100%,$color,$left: 0,$bottom: 0){
+  content: '';
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  height: 1px;
+  width: $width;
+  background-color: $color;
+  opacity: 0.3;
+}

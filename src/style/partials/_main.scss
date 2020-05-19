@@ -1,11 +1,25 @@
-.main{
+/****************************************************
+* MAIN
+****************************************************/
+
+  .main{
+  flex-grow: 1;
+  margin-top: 140px;
   &__wrapper{
-    @include u--wrapper(65%);
-  }
-  &__section{
-    h3{
-      margin-top: 60px;
-      margin-bottom: 20px;
+    @include u--wrapper(50%);
+    section{
+      h3{
+        margin-top: 60px;
+        margin-bottom: 20px;
+      }
+      p{
+        font-weight: 400;
+        color: $grey;
+        line-height: 26px;
+      }
+      span{
+        color: $blue;
+      }
     }
   }
 }

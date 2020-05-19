@@ -1,0 +1,25 @@
+/****************************************************
+* FOOTER
+****************************************************/
+
+.footer{
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  background: $light-grey;
+  &__wrapper{
+    height: 100%;
+    @include u--wrapper(50%);
+    @include u--flex(row,space-between,center);
+  }
+  &__left{
+    .footer__list{
+      @include u--list(inline-block,5px);
+      .list__item{
+        color: $grey;
+        font-size: 10px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

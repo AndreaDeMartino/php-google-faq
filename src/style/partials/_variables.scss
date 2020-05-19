@@ -3,12 +3,19 @@
 ****************************************************/
 
 // COLORS
-
+$grey: #5f6368;
+$blue: #3367d6;
+$light-grey: #f5f5f5;
 // TYPOGRAPHY
 $v--main-font: 'Roboto', sans-serif;
 
 h3{
   font-size: 24px;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 22px;
   font-weight: 400;
 }
 // SETUP

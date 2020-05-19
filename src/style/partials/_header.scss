@@ -1,0 +1,58 @@
+/****************************************************
+* HEADER
+****************************************************/
+
+.header{
+  min-height: 100px;
+  @include u--wrapper(97%);
+  padding-top: 20px;
+  position: fixed;
+  z-index: 2;
+  background: #fff;
+
+  &__logo{
+    @include u--flex(row,flex-start,center);
+    max-height: 60%;
+    .google-logo{
+      height: 22px;
+    }
+    h4{
+      color: $grey;
+      margin-left: 10px;
+    }
+  }
+
+  &__nav{
+    @include u--flex(row,space-between);
+    margin-top: 20px;
+    color: $grey;
+    .nav__left{
+      .nav__list{
+        @include u--list(inline-block, 50px);
+        .list__item{
+          cursor: pointer;
+          &--active{
+            position: relative;
+            color: $blue;
+            font-weight: 500;
+            &:after{
+              content: '';
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 30px;
+              height: 3px;
+              background-color: $blue;
+            }
+          }
+        }
+      }
+    }
+    .nav__right{
+      padding-right: 10px;
+    }
+  }
+  &:after{
+    @include u--bottom-line(100%,$grey);
+  }
+}
