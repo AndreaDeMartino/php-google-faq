@@ -99,6 +99,12 @@
         </div>
         <div class="footer__right">
           <img src="dist/img/world.png" alt="">
+          <select class="footer_selection">
+                    <option value="English">English (United Kingdom)</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Japanase">Japanase</option>
+                    <option value="Spanish">Spanish</option>
+          </select>
         </div>
       </div>
     </footer>

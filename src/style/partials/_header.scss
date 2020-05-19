@@ -19,6 +19,7 @@
     h4{
       color: $grey;
       margin-left: 10px;
+      cursor: pointer;
     }
   }
 
@@ -50,6 +51,7 @@
     }
     .nav__right{
       padding-right: 10px;
+      cursor: pointer;
     }
   }
   &:after{
