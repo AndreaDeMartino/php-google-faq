@@ -1,0 +1,11 @@
+.main{
+  &__wrapper{
+    @include u--wrapper(65%);
+  }
+  &__section{
+    h3{
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+  }
+}

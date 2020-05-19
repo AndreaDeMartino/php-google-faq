@@ -1,3 +1,36 @@
-body {
-  background: #000;
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);/****************************************************
+* VARIABLES
+****************************************************/
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/****************************************************
+* COMMON STYLES
+****************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Phones (landscape phones, 576px and up) */
+/* Tablets (tablets, 768px and up) */
+/* Desktops (desktops, 992px and up) */
+/* Large desktops (large desktops, 1200px and up) */
+.main__wrapper {
+  width: 65%;
+  margin: 0 auto;
+}
+.main__section h3 {
+  margin-top: 60px;
+  margin-bottom: 20px;
 }

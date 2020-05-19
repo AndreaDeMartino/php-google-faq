@@ -1,3 +1,14 @@
-body{
-  background: #000;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@import 'partials/variables';
+@import 'partials/common';
+@import 'partials/breakpoint';
+
+// HEADER
+@import 'partials/header';
+
+// MAIN
+@import 'partials/main';
+
+// FOOTER
+@import 'partials/footer';
